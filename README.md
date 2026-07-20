@@ -2,29 +2,74 @@
 
 A full-stack task management application built with React + Vite on the frontend and Node.js + Express + MongoDB on the backend. The app supports user authentication, task management, and an admin panel for managing users and tasks.
 
-## Features
+---
 
-- User registration and login
-- Protected routes for authenticated users
-- Task creation, update, completion, and deletion
-- Profile management
-- Admin dashboard with user and task management
-- Responsive UI with Tailwind CSS
+### 👤 User Features
 
-## Project Structure
+- User Registration
+- User Login & Logout
+- JWT Authentication
+- Protected Routes
+- Create Tasks
+- Edit Tasks
+- Delete Tasks
+- Update Task Status
+- Filter Tasks by Status
+- Filter Tasks by Priority
+- Dashboard Statistics
+- Responsive UI
+- Light & Dark Mode
 
-- backend/: Express API, MongoDB models, auth and task routes
-- frontend/: React/Vite client app
+### 👑 Super Admin Features
+
+- Secure Admin Login
+- View All Registered Users
+- View Every User's Tasks
+- View User Task Progress
+- Dashboard Analytics
+- Manage All Tasks
+- Delete Users (Optional)
+- Activate / Deactivate Users (Optional)
+
+---
+
+# 📂 Project Structure
+
+```text
+Task-Management-System
+│
+├── backend
+│   ├── src
+│   ├── package.json
+│   ├── seed.js
+│   └── ...
+│
+├── frontend
+│   ├── src
+│   ├── public
+│   ├── package.json
+│   └── ...
+│
+├── screenshots
+│   ├── login.png
+│   ├── register.png
+│   ├── dashboard.png
+│   ├── task-list.png
+│   ├── admin-dashboard.png
+│   └── user-management.png
+│
+└── README.md
+```
 
 ## Tech Stack
 
 ### Frontend
-- React 19
-- Vite
-- React Router DOM
+-- React.js (Vite)
 - Tailwind CSS
+- React Router DOM
 - Axios
 - React Hot Toast
+- Lucide React
 
 ### Backend
 - Node.js
@@ -39,6 +84,48 @@ A full-stack task management application built with React + Vite on the frontend
 - Node.js (v18 or newer recommended)
 - npm
 - MongoDB instance (local or cloud, such as MongoDB Atlas)
+
+
+---
+
+# 📷 Application Screenshots
+
+## 🔐 Login Page
+
+![Login](./screenshots/login.png)
+
+---
+
+## 📝 Register Page
+
+![Register](./screenshots/register.png)
+
+---
+
+## 📊 User Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## ✅ Task Management
+
+![Task List](./screenshots/task-list.png)
+
+---
+
+## 👑 Admin Dashboard
+
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+---
+
+## 👥 User Management
+
+![User Management](./screenshots/user-management.png)
+
+---
+
 
 ## Installation
 
@@ -98,6 +185,81 @@ curl http://localhost:5000/api/health
 - The frontend expects the backend API at `http://localhost:5000/api` by default.
 - If needed, you can override it by setting `VITE_API_URL` in the frontend environment.
 
-## License
+# 🔐 Authentication
 
-This project is licensed under the ISC license.
+The project uses
+
+- JWT Authentication
+- bcrypt Password Hashing
+- Protected Routes
+- Role-Based Authorization
+
+Roles
+
+- User
+- Admin
+
+---
+
+# 📋 Task Fields
+
+Each task contains:
+
+- Title
+- Description
+- Priority
+  - Low
+  - Medium
+  - High
+- Status
+  - Pending
+  - In Progress
+  - Completed
+- Due Date
+- Created Date
+- Updated Date
+
+---
+
+# 📈 Admin Dashboard
+
+The Admin Dashboard provides:
+
+- Total Users
+- Total Tasks
+- Pending Tasks
+- In Progress Tasks
+- Completed Tasks
+- User Task Progress
+- User Management
+- Task Monitoring
+
+---
+
+# 🚀 Future Improvements
+
+- Email Verification
+- Forgot Password
+- Task Search
+- Pagination
+- Charts & Analytics
+- File Attachments
+- Notifications
+- Docker Deployment
+- CI/CD Pipeline
+
+---
+
+# 👨‍💻 Author
+
+**Eranda Hashan**
+
+GitHub
+
+https://github.com/Ehashan
+
+Repository
+
+https://github.com/Ehashan/Task-Management-System
+
+---
